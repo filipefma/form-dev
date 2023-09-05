@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Cadastro</title>
+</head>
+<body>
+  
+  <main class="container">
+
+    <form action="#">
+
+      <!-- Título -->
+      <div class="header-group">
+        <div class="header-title">
+          <h1>Cadastro de DEVs</h1>
+        </div>
+        <div class="header-img">
+          <img src="./assets/images/undraw_forming_ideas_re_2afc.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Dados pessoais -->
+      <div class="input-group">
+        <div class="input-box">
+          <label for="firstname">Nome</label>
+          <input type="text" name="firstname" id="firstname" required placeholder="Digite seu nome">
+        </div>
+        <div class="input-box">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+        </div>
+        <div class="input-box">
+          <label for="cell">Celular</label>
+          <input type="tel" name="cell" id="cell" required placeholder="(00) 98765-4321">
+        </div>
+        <div class="input-box">
+          <label for="birthday">Data de nascimento</label>
+          <input type="date" name="birthday" id="birthday">
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="example@email.com">
+        </div>
+        <div class="input-box">
+          <label for="password">Senha</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+      </div>
+
+      <!-- Gênero -->
+      <div class="gender-group">
+        <div class="gender-title">
+          <p>Gênero</p>
+        </div>
+        <div class="gender-input">
+          <div class="gender">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Masculino</label>
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender" id="female">
+            <label for="female">Feminino</label>
+          </div>
+          <div class="gender">
+            <input type="radio" name="gender" id="none">
+            <label for="none">Não informar</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tecnologias -->
+      <div class="tech-group">
+        <div class="tech-title">
+          <p>Tecnologias que você domina</p>
+        </div>
+        <div class="tech-input">
+          <div class="tech">
+            <input type="checkbox" name="tech" id="html">
+            <label for="html">HTML</label>
+          </div>
+          <div class="tech">
+            <input type="checkbox" name="tech" id="css">
+            <label for="css">CSS</label>
+          </div>
+          <div class="tech">
+            <input type="checkbox" name="tech" id="javascript">
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div class="tech">
+            <input type="checkbox" name="tech" id="php">
+            <label for="php">PHP</label>
+          </div>
+          <div class="tech">
+            <input type="checkbox" name="tech" id="java">
+            <label for="java">JAVA</label>
+          </div>
+          <div class="tech">
+            <input type="checkbox" name="tech" id="python">
+            <label for="python">PYTHON</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Área atuação -->
+      <div class="work-group">
+        <div class="work-title">
+          <p>Qual sua área de atuação?</p>
+        </div>
+        <div class="work-input">
+          <select name="work" id="work">
+            <option value="" disabled selected>Selecione</option>
+            <option value="frontend">Front-End</option>
+            <option value="backend">Back-End</option>
+            <option value="fullstack">Fullstack</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Botão -->
+      <div class="btn-group">
+        <button class="btn"><a href="#">Enviar</a></button>
+      </div>
+
+      <!-- Rodapé -->
+      <div class="footer">
+        <footer class="footer">Criado por Filipe Maia, 2023</footer>
+      </div>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
